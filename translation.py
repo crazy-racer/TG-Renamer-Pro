@@ -5,7 +5,7 @@ class Translation(object):
 
     RENAME_403_ERR = "What Are You Doing? You are Banned"
     ABS_TEXT = "What Are You Trying To Do,Mate?"
-    UPGRADE_TEXT = "CONTACT @prgofficial"
+    UPGRADE_TEXT = "CONTACT @KL35Palakaaran"
     DOWNLOAD_START = "Give Me Some Time Bruh!!(〒﹏〒)"
     UPLOAD_START = "Hurray... Completed Downloading(;ŏ﹏ŏ)"
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry WTF Do You Think! I'll Upload It?"
