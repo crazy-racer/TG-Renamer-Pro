@@ -1,13 +1,13 @@
 class Translation(object):
-    START_TEXT = """ A Simple File Renamer Bot With Permanent Thumbnail support!💯
+    START_TEXT = """ ഞാൻ ഒരു Simple File Renamer Bot ആണ്. എനിക്ക് Permanent Thumbnail support ഉണ്ട്!💯
 
-<b>Send me any Telegram file and reply to that file with /rename NewName.extn</b>"""
+<b>എനിക്ക് ഏതെങ്കിലും ഒരു Telegram File Send ചെയ്യുക അതിന് Reply ആയി /rename NewName.extn എന്ന് തന്നാൽ ഞാൻ അത് Rename ചെയ്തു തരുന്നതായിരിക്കും.</b>"""
 
-    RENAME_403_ERR = "What Are You Doing? You are Banned"
-    ABS_TEXT = "What Are You Trying To Do,Mate?"
-    UPGRADE_TEXT = "CONTACT @KL35Palakaaran"
-    DOWNLOAD_START = "Give Me Some Time Bruh!!(〒﹏〒)"
-    UPLOAD_START = "Hurray... Completed Downloading(;ŏ﹏ŏ)"
+    RENAME_403_ERR = "എന്തുവാടെ കാണിക്കുന്നേ? നിന്നെ ഞാൻ ban ചെയ്തിരിക്കുന്നു"
+    ABS_TEXT = "നീ എന്തോ ചെയ്യാൻ നോക്കുവാടെ?"
+    UPGRADE_TEXT = "Contact: @KL35Palakaaran"
+    DOWNLOAD_START = "ഞാൻ Download Start ചെയ്തിട്ടുണ്ട്. എനിക്ക് കുറച്ചു സമയം വേണം."
+    UPLOAD_START = "ഹോ.. സമാധാനം Download cheyth"
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry WTF Do You Think! I'll Upload It?"
     AFTER_SUCCESSFUL_UPLOAD_MSG = "**Thank you for Using Me > ©  @prgofficial **"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds.\nUploaded in {} seconds"
