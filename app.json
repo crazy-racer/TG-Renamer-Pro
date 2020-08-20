@@ -1,5 +1,5 @@
 {
-  "name": "TG Rename Bot",
+  "name": "TG Renamer Bot",
   "description": "Telegram's best Open Source Rename Bot. Create your Fork now.",
   "keywords": [
     "telegram",
@@ -8,9 +8,9 @@
     "source",
     "Rename"
   ],
-  "success_url": "https://github.com/aid-3n",
-  "website": "https://githib.com/KRSreekumar",
-  "repository": "https://github.com/KRSreekumar/RenameBot-PermTB",
+  "success_url": "https://github.com/Palakaaran",
+  "website": "https://githib.com/Palakaaran",
+  "repository": "https://github.com/Palakaaran/TG-Renamer-Bot",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
@@ -18,23 +18,23 @@
     },
     "TG_BOT_TOKEN": {
       "description": "Your bot token, as a string.",
-      "value": "1327139878:AAE81ecgFGl-MB32DSZsxps9N1AcXTIELMY"
+      "value": ""
     },
     "CHAT_BASE_TOKEN": {
       "description": "Your chat base token, as a string.",
-      "value": "ea92c261-694e-4f39-a280-0f4ff06a4688"
+      "value": ""
     },
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "1425979"
+      "value": ""
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "154f62193b367550547c02dc9efc42d7"
+      "value": ""
     },
     "AUTH_USERS": {
       "description": "allow only pre-defined users to use this bot",
-      "value": "1296480894"
+      "value": ""
     },
     "BANNED_USERS": {
       "description": "Banned Unwanted members..",
