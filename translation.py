@@ -7,21 +7,22 @@ class Translation(object):
     ABS_TEXT = "നീ എന്തോ ചെയ്യാൻ നോക്കുവാടെ?"
     UPGRADE_TEXT = "Contact: @KL35Palakaaran"
     DOWNLOAD_START = "ഞാൻ Download Start ചെയ്തിട്ടുണ്ട്. എനിക്ക് കുറച്ചു സമയം വേണം."
-    UPLOAD_START = "ഹോ.. സമാധാനം Download cheyth"
-    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry WTF Do You Think! I'll Upload It?"
-    AFTER_SUCCESSFUL_UPLOAD_MSG = "**Thank you for Using Me > ©  @prgofficial **"
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds.\nUploaded in {} seconds"
-    NOT_AUTH_USER_TEXT = "CONTACT @prgofficial"
-    NOT_AUTH_USER_TEXT_FILE_SIZE = "IF You Got This Message You Should Contact @prgofficial"
-    SAVED_CUSTOM_THUMB_NAIL = "Thumbnail Saved ✅ This Is Permanent"
-    DEL_ETED_CUSTOM_THUMB_NAIL = "Custom thumbnail cleared succesfully🤦"
-    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "Media cleared succesfully."
-    SAVED_RECVD_DOC_FILE = "File Downloaded Successfully 😎"
+    UPLOAD_START = "ഹോ.. സമാധാനം Download ചെയ്ത് കഴിഞ്ഞു ഇനി Upload ചെയ്യണം"
+    RCHD_TG_API_LIMIT = "നീ കണ്ടോ ഞാൻ {} സെക്കന്റിൽ Download ചെയ്തു.\nFile Size ഞാൻ കണ്ടുപിടിച്ചു: {}\nSorry നീ എന്തുവാ വിചാരിച്ചേ! ഞാൻ ഇപ്പോൾ Upload ചെയ്യും?"
+    AFTER_SUCCESSFUL_UPLOAD_MSG = "**Rename ചെയ്യാൻ എന്നെ ഉപയോഗിച്ചതിന് നന്ദി അളിയാ, നന്ദി > ©  @KL35Palakaaran **"
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "നീ കണ്ടോ ഞാൻ {} സെക്കന്റിൽ Download ചെയ്തു.\nഎന്നിട്ട് {} സെക്കന്റിൽ Upload ചെയ്തു"
+    NOT_AUTH_USER_TEXT = "Contact @KL35Palakaaran"
+    NOT_AUTH_USER_TEXT_FILE_SIZE = "ഈ മെസ്സേജ് നിനക്ക് കിട്ടിയെങ്കിൽ നീ @KL35Palakaaran മുതലാളിയെ Contact ചെയ്യണം."
+    SAVED_CUSTOM_THUMB_NAIL = "ഞാൻ Custom Thumbnail Save ചെയ്തു ✅. ഈ Thumbnail ആയിരിക്കും ഇനി മുതൽ ഉള്ള എല്ലാ ഫയലുകൾക്കും ഞാൻ Use ചെയ്യുക."
+    DEL_ETED_CUSTOM_THUMB_NAIL = "ഞാൻ Custom Thumbnail Delete ചെയ്തു ❎️. ഇനി Thumbnail താരത്തെ അയക്കുന്ന ഫയലുകൾക്ക് Thumbnail കാണില്ല."
+    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "Media ഞാൻ മൊത്തത്തിൽ അങ്ങ് കളഞ്ഞു."
+    SAVED_RECVD_DOC_FILE = "ഞാൻ File Download ചെയ്തു കഴിഞ്ഞു😎"
     CUSTOM_CAPTION_UL_FILE = " "
-    NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom ThumbNail found,SED🤒"
+    NO_CUSTOM_THUMB_NAIL_FOUND = "നീ എനിക്ക് Custom Thumbnail ഒന്നും തന്നില്ല. കഷ്ടം"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
-    HELP_USER = """It's not that complicated😅
+    HELP_USER = """ഇത് അത്രക്ക് പാടൊന്നുമല്ലടെ.
     
-1. Send me any Telegram File.
-2. Reply to that message with /rename NEWNAME.EXTENSION"""
+1. ഒരു Telegram File Send ചെയ്യുക.
+2. Thumbnail തരുക.(നീ ഒരു പ്രാവശ്യം തന്നാൽ മതി)
+3. ആ ഫയലിന് Reply ആയി /rename NewName.Extension എന്ന് തരുക."""
 
