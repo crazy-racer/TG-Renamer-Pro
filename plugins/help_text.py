@@ -65,3 +65,14 @@ async def upgrade(bot, update):
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
     )
+
+
+@pyrogram.Client.on_message(pyrogram.Filters.command(["kl35thumb"]))
+async def kl35thumb(bot, update):
+    # logger.info(update)
+    TRChatBase(update.from_user.id, update.text, "/kl35thumb")
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.KL_35_THUMB_NAIL,
+        reply_to_message_id=update.message_id
+    )
