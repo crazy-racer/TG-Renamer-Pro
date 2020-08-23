@@ -20,7 +20,7 @@ class Translation(object):
     CUSTOM_CAPTION_UL_FILE = " "
     NO_CUSTOM_THUMB_NAIL_FOUND = "നീ എനിക്ക് Custom Thumbnail ഒന്നും തന്നില്ല. കഷ്ടം"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
-    KL_35_THUMB_NAIL = "https://telegra.ph/file/0b4e6202434fec2b29046.jpg"
+    KL_35_THUMB_NAIL = "താഴെ കാണുന്ന Thumbnail ആണ് KL-35 Cinemas ഗ്രൂപ്പിന്റെ Thumbnail.\nhttps://telegra.ph/file/0b4e6202434fec2b29046.jpg"
     HELP_USER = """ഇത് അത്രക്ക് പാടൊന്നുമല്ലടെ.
     
 1. ഒരു Telegram File Send ചെയ്യുക.
