@@ -1,5 +1,5 @@
 class Translation(object):
-    START_TEXT = """ ഞാൻ ഒരു Simple File Renamer Bot ആണ്. എനിക്ക് Permanent Thumbnail support ഉണ്ട്!💯
+    START_TEXT = """Hello <b>{}</b> ഞാൻ <b>{}</b>, ഞാൻ ഒരു Simple File Renamer Bot ആണ്. എനിക്ക് Permanent Thumbnail support ഉണ്ട്!💯
 
 <b>എനിക്ക് ഏതെങ്കിലും ഒരു Telegram File Send ചെയ്യുക അതിന് Reply ആയി /rename NewName.extn എന്ന് തന്നാൽ ഞാൻ അത് Rename ചെയ്തു തരുന്നതായിരിക്കും.</b>"""
 
