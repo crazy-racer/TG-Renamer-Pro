@@ -59,12 +59,15 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Help', callback_data="help_back"),
-                    InlineKeyboardButton('Feedback', url='https://t.me/No_OnE_Kn0wS_Me')
+                    InlineKeyboardButton("❓️Help❓️", callback_data="help_back"),
+                    InlineKeyboardButton("❤️Creator❤️", url="https://t.me/KL35Palakaaran")
                 ],
                 [
-                    InlineKeyboardButton('Other Bots', url='https://t.me/Mai_bOTs/17'),
-                    InlineKeyboardButton('Source', url='https://github.com/No-OnE-Kn0wS-Me/FileRenameBot')
+                    InlineKeyboardButton("❤️My Group❤️", url="https://t.me/KL35Cinemas"),
+                    InlineKeyboardButton("💛My Channel💛", url="https://t.me/KL35Cinemaz")
+                ],
+                [
+                    InlineKeyboardButton("📌 Support Group", url="https://t.me/InFoTelGroup")
                 ]
             ]
         ),
