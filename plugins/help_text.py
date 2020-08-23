@@ -49,7 +49,7 @@ async def start(bot,update):
         chat_id=update.chat.id,
             text = START_TEXT
 
-    keyboard += [[InlineKeyboardButton(text="❓️Help❓️",url="http://t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text="🛡Creator🛡",url="t.me/KL35Palakaaran")]]
+    keyboard += [[InlineKeyboardButton(text="❓️Help❓️",url="t.me/KL35RenamerBot?start=help"),InlineKeyboardButton(text="🛡Creator🛡",url="t.me/KL35Palakaaran")]]
     keyboard += [[InlineKeyboardButton(text="❤️My Group❤️",url="t.me/KL35Cinemas"),InlineKeyboardButton(text="💛My Channel💛",url="t.me/KL35Cinemaz")]]
     keyboard += [[InlineKeyboardButton(text="📌 Support Group",url="t.me/InFoTelGroup")]]
 
