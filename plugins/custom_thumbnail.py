@@ -143,15 +143,3 @@ async def delete_thumbnail(bot, update):
         text=Translation.DEL_ETED_CUSTOM_THUMB_NAIL,
         reply_to_message_id=update.message_id
     )
-@pyrogram.Client.on_message(pyrogram.Filters.command(["kl35thumb"]))
-async def kl35thumb(bot, update):
-    if update.from_user.id in Config.BANNED_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
-    else:
-        update.effective_message.reply_text("https://telegra.ph/file/0b4e6202434fec2b29046.jpg"
-     )      
