@@ -48,7 +48,6 @@ async def start(bot,update):
     await bot.send_message(
         chat_id=update.chat.id,
             text = START_TEXT
-            parse_mode="markdown"
     )
 
     await bot.send_message(
