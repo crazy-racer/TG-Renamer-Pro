@@ -48,14 +48,30 @@ async def start(bot,update):
     await bot.send_message(
         chat_id=update.chat.id,
             text = START_TEXT
+            parse_mode="markdown"
+    )
 
-    keyboard = [[InlineKeyboardButton(text="🛡Creator🛡",url="t.me/KL35Palakaaran"),InlineKeyboardButton(text="❓️Help❓️", callback_data="help_back")]]
-    keyboard += [[InlineKeyboardButton(text="❤️My Group❤️",url="t.me/KL35Cinemas"),InlineKeyboardButton(text="💛My Channel💛",url="t.me/KL35Cinemaz")]]
-    keyboard += [[InlineKeyboardButton(text="📌 Support Group",url="t.me/InFoTelGroup")]]
-
-    update.effective_message.reply_text(START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name)), 
-                                         reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
-
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.START_TEXT.format(update.from_user.first_name),
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
+                    InlineKeyboardButton('😎Creator😎', url="t.me/KL35Palakaaran)
+                ],
+                [
+                    InlineKeyboardButton('❤️My Group❤️', url="t.me/KL35Cinemas"),
+                    InlineKeyboardButton('💛My Channel💛', url="t.me/KL35Cinemaz")
+                ],
+                [
+                    InlineKeyboardButton('📌 Support Group', url="t.me/InFoTelGroup")
+                ]
+            
+            ]
+        ),
+        reply_to_message_id=update.message_id
+    )
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["upgrade"]))
 async def upgrade(bot, update):
