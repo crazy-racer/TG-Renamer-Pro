@@ -57,7 +57,7 @@ async def start(bot,update):
             [
                 [
                     InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
-                    InlineKeyboardButton('😎Creator😎', url="t.me/KL35Palakaaran)
+                    InlineKeyboardButton('😎Creator😎', url="t.me/KL35Palakaaran")
                 ],
                 [
                     InlineKeyboardButton('❤️My Group❤️', url="t.me/KL35Cinemas"),
