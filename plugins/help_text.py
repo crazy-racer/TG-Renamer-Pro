@@ -88,7 +88,7 @@ async def upgrade(bot, update):
 @pyrogram.Client.on_message(pyrogram.Filters.command(["kl35thumb"]))
 async def kl35thumb(bot, update):
     # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/kl35thumb")
+    TRChatBase(update.from_user.id, update.photo, "/kl35thumb")
     await bot.send_photo(
         chat_id=update.chat.id,
         photo=https://telegra.ph/file/0b4e6202434fec2b29046.jpg,
