@@ -89,8 +89,8 @@ async def upgrade(bot, update):
 async def kl35thumb(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/kl35thumb")
-    await bot.send_message(
+    await bot.send_photo(
         chat_id=update.chat.id,
-        text=Translation.KL_35_THUMB_NAIL,
+        photo=https://telegra.ph/file/0b4e6202434fec2b29046.jpg,
         reply_to_message_id=update.message_id
     )
