@@ -13,6 +13,7 @@ class Translation(object):
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "നീ കണ്ടോ ഞാൻ {} സെക്കന്റിൽ Download ചെയ്തു.\nഎന്നിട്ട് {} സെക്കന്റിൽ Upload ചെയ്തു"
     NOT_AUTH_USER_TEXT = "Contact @KL35Palakaaran"
     NOT_AUTH_USER_TEXT_FILE_SIZE = "ഈ മെസ്സേജ് നിനക്ക് കിട്ടിയെങ്കിൽ നീ @KL35Palakaaran മുതലാളിയെ Contact ചെയ്യണം."
+    REPLY_TO_DOC_FOR_RENAME_FILE = "ഒരു ഫയലിനു Reply ആയി <code>/rename</code> <b>NewName.ext</b> എന്ന് തരുക അപ്പോൾ ഞാൻ ആ File Rename ചെയ്തു തരുന്നതാണ്."
     SAVED_CUSTOM_THUMB_NAIL = "ഞാൻ Custom Thumbnail Save ചെയ്തു ✅. ഈ Thumbnail ആയിരിക്കും ഇനി മുതൽ ഉള്ള എല്ലാ ഫയലുകൾക്കും ഞാൻ Use ചെയ്യുക."
     DEL_ETED_CUSTOM_THUMB_NAIL = "ഞാൻ Custom Thumbnail Delete ചെയ്തു ❎️. ഇനി Thumbnail താരത്തെ അയക്കുന്ന ഫയലുകൾക്ക് Thumbnail കാണില്ല."
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "Media ഞാൻ മൊത്തത്തിൽ അങ്ങ് കളഞ്ഞു."
