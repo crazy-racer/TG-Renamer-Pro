@@ -55,6 +55,12 @@ async def del_thumb(id):
         SESSION.delete(msg)
         SESSION.commit()
 
+async def show_thumb(id):
+    with INSERTION_LOCK:
+        msg = SESSION.query(Thumbnail).get(id)
+        SESSION.show(msg)
+        SESSION.commit()
+
 async def thumb(id):
     try:
         t = SESSION.query(Thumbnail).get(id)
