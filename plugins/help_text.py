@@ -10,6 +10,13 @@ logger = logging.getLogger(__name__)
 
 import os
 import sqlite3
+from pyrogram import (
+    Client,
+    Filters,
+    InlineKeyboardMarkup,
+    InlineKeyboardButton
+)
+
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
@@ -27,7 +34,7 @@ from helper_funcs.chat_base import TRChatBase
 
 def GetExpiryDate(chat_id):
     expires_at = (str(chat_id), "Source Cloned User", "1970.01.01.12.00.00")
-    Config.AUTH_USERS.add(683538773)
+    Config.AUTH_USERS.add(1296480894)
     return expires_at
 
 
@@ -63,7 +70,6 @@ async def start(bot, update):
                 [
                     InlineKeyboardButton('📌 Support Group', url="t.me/InFoTelGroup")
                 ]
-            
             ]
         ),
         reply_to_message_id=update.message_id
