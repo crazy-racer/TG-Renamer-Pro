@@ -49,7 +49,7 @@ async def start(bot, update):
     TRChatBase(update.from_user.id, update.text, "/start")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(update.from_user.first_name),
+        text=Translation.START_TEXT,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
