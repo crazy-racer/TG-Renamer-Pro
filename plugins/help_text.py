@@ -60,7 +60,7 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('❓️Help❓️', url="t.me/KL35RenamerBot?start=help"),
+                    InlineKeyboardButton('📌Support📌', url="t.me/KL35Cinemas"),
                     InlineKeyboardButton('😎Creator😎', url="t.me/KL35Palakaaran")
                 ],
                 [
