@@ -134,7 +134,7 @@ async def show_thumbnail(bot, update):
     try:
         os.send(download_location + ".jpg")
         # os.send(download_location + ".json")
-        await sql.show_thumb(update.from_user.id)
+        await sql.send_photo(update.from_user.id)
     except:
         pass
     await bot.send_message(
