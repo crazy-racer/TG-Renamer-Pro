@@ -19,6 +19,7 @@ class Translation(object):
     SAVED_RECVD_DOC_FILE = "ഞാൻ File Download ചെയ്തു കഴിഞ്ഞു😎"
     CUSTOM_CAPTION_UL_FILE = " "
     NO_CUSTOM_THUMB_NAIL_FOUND = "നീ എനിക്ക് Custom Thumbnail ഒന്നും തന്നില്ല. കഷ്ടം"
+    SHOW_CUSTOM_THUMB_NAIL = "<b>😎👆Permanent Thumbnail👆😎</b>"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     KL35_THUMBNAIL_PHOTO = "https://telegra.ph/file/0b4e6202434fec2b29046.jpg"
     HELP_USER = """ഇത് അത്രക്ക് പാടൊന്നുമല്ലടെ.
