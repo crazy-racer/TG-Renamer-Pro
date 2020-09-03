@@ -69,6 +69,7 @@ async def start(bot, update):
                 ],
                 [
                     InlineKeyboardButton('🤕Report Bugs🤕', url="t.me/KL35Palakaaran")
+                    InlineKeyboardButton('🔐Close🔐', callback_data="hidden_callback_data")
                 ]
             ]
         ),
