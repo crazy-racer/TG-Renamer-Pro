@@ -54,7 +54,7 @@ async def help_user(bot, update):
 async def start(bot, update):
     # logger.info(update)
     if "close" in update.data: 
-    await update.message.delete(
+    await update.message.delete()
         # Delete one message
         app.delete_messages(chat_id, message_id)
 
@@ -63,7 +63,7 @@ async def start(bot, update):
 
         # Delete messages only on your side (without revoking)
         app.delete_messages(chat_id, message_id, revoke=False)
-        ),
+
         reply_to_message_id=update.message_id
     )
 
