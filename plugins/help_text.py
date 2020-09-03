@@ -53,6 +53,22 @@ async def help_user(bot, update):
 @pyrogram.Client.on_message(pyrogram.Filters.command(["start"]))
 async def start(bot, update):
     # logger.info(update)
+    if "close" in update.data: 
+    await update.message.delete(
+        # Delete one message
+        app.delete_messages(chat_id, message_id)
+
+        # Delete multiple messages at once
+        app.delete_messages(chat_id, list_of_message_ids)
+
+        # Delete messages only on your side (without revoking)
+        app.delete_messages(chat_id, message_id, revoke=False)
+        ),
+        reply_to_message_id=update.message_id
+    )
+
+async def start(bot, update):
+    # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/start")
     await bot.send_message(
         chat_id=update.chat.id,
