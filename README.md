@@ -17,6 +17,9 @@ For Queries and support, contact [KL35Palakaaran](https://telegram.dog/KL35Palak
 ## Credits, and Thanks to Beloved Developers ;
 
 * [PRG Official](https://telegram.dog/prgofficial)
+* [](https://telegram.dog/)
+* [](https://telegram.dog/)
+* [](https://telegram.dog/)
 * [SpEcHlDe](https://telegram.dog/SpEcHlDe) 
 * [Dan Tès](https://telegram.dog/haskell) 
 * [Yoily](https://telegram.dog/YoilyL)
