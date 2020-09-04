@@ -30,4 +30,5 @@ class Translation(object):
 1. ഒരു Telegram File Send ചെയ്യുക.
 2. Thumbnail തരുക.(നീ ഒരു പ്രാവശ്യം തന്നാൽ മതി)
 3. ആ ഫയലിന് Reply ആയി /rename NewName.Extension എന്ന് തരുക. \n\n<b>©  @KL35RonaldoFan ©️ @KL35Cinemas ©️ @KL35Cinemaz</b>"""
+    ABOUT_ME = """<b>⭕️ Name: {} </b> \n\n<b>⭕️ UserName: {}</b> \n\n<b>⭕️ Creator: @KL35RonaldoFan</b> \n\n<b>⭕️ Language: Python3</b> \n\n<b>⭕️ Library : <a href="https://docs.pyrogram.org/">Pyrogram asyncio 0.16.1</a></b> \n\n<b>⭕️ Source Code : 👉 <a href="https://bit.ly/2AVFsoD">Click Here</a></b>"""
 
