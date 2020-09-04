@@ -56,7 +56,10 @@ async def about_me(bot, update):
     TRChatBase(update.from_user.id, update.text, "/about")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.ABOUT_ME.format(bot.first_name),(bot.username),
+        text=Translation.ABOUT_ME.format(
+            bot.full_name,
+            bot.username
+        ),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
