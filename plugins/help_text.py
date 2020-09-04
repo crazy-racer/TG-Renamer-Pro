@@ -57,7 +57,7 @@ async def about_me(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.ABOUT_ME.format(
-            bot.full_name,
+            bot.first_name,
             bot.username
         ),
         parse_mode="html",
