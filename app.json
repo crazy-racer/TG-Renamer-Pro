@@ -8,9 +8,9 @@
     "source",
     "Rename"
   ],
-  "success_url": "https://github.com/Palakaaran",
-  "website": "https://githib.com/Palakaaran",
-  "repository": "https://github.com/Palakaaran/TG-Renamer-Bot",
+  "success_url": "https://github.com/KL-35RonaldoFan",
+  "website": "https://githib.com/KL-35RonaldoFan",
+  "repository": "https://github.com/KL-35RonaldoFan/TG-Renamer-Bot",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
