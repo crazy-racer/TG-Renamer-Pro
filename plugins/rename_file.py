@@ -129,7 +129,7 @@ async def rename_doc(bot, update):
                 document=new_file_name,
                 thumb=thumb_image_path,
                 custom_file_name = file_name
-                caption=<b><i>("custom_file_name")</i></b> + description,
+                caption=("<b><i>"custom_file_name"</i></b>") + description,
                 # reply_markup=reply_markup,
                 reply_to_message_id=update.reply_to_message.message_id,
                 progress=progress_for_pyrogram,
