@@ -15,8 +15,6 @@ class Config(object):
     BANNED_USERS = []
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
-    #File Name
-    FILE_NAME = "new_file_name"
     # Telegram maximum file upload size
     MAX_FILE_SIZE = 50000000
     TG_MAX_FILE_SIZE = 2097152000
