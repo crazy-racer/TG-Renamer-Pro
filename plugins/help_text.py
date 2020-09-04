@@ -68,8 +68,7 @@ async def start(bot, update):
                     InlineKeyboardButton('💛My Channel💛', url="t.me/KL35Cinemaz")
                 ],
                 [
-                    InlineKeyboardButton('🤕Report Bugs🤕', url="t.me/KL35RonaldoFan")
-                    InlineKeyboardButton('🆒Source Code🆒', url="https://telegra.ph/file/c99524969744ed621f491.jpg")
+                    InlineKeyboardButton('🆒Source Code🆒', url="https://bit.ly/2AVFsoD")
                 ]
             ]
         ),
