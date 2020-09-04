@@ -132,7 +132,6 @@ async def show_thumbnail(bot, update):
     TRChatBase(update.from_user.id, update.photo, "showthumb")
     download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + "/" + str(reply_message.media_group_id) + "/"
     save_final_image = download_location + str(round(time.time())) + ".jpg"
-             imgs_comb.send(save_final_image)
              # send
              await bot.send_photo(
                  chat_id=update.chat.id,
