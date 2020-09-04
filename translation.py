@@ -20,7 +20,7 @@ class Translation(object):
     DEL_ETED_CUSTOM_THUMB_NAIL = "ഞാൻ Custom Thumbnail Delete ചെയ്തു ❎️. ഇനി Thumbnail താരത്തെ അയക്കുന്ന ഫയലുകൾക്ക് Thumbnail കാണില്ല. \n\n<b>©  @KL35RonaldoFan ©️ @KL35Cinemas ©️ @KL35Cinemaz</b>"
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "Media ഞാൻ മൊത്തത്തിൽ അങ്ങ് കളഞ്ഞു."
     SAVED_RECVD_DOC_FILE = "ഞാൻ File Download ചെയ്തു കഴിഞ്ഞു😎"
-    CUSTOM_CAPTION_UL_FILE = "━━━━━━━━━ ✧ ━━━━━━━━ \n💢@KL35Cinemas💢 \n━━━━━━━━━ ✧ ━━━━━━━━ \n\n🎗ʝσιи🎗ѕнαяє🎗ѕυρρσят🎗"
+    CUSTOM_CAPTION_UL_FILE = "\n━━━━━━━━━ ✧ ━━━━━━━━ \n💢@KL35Cinemas💢 \n━━━━━━━━━ ✧ ━━━━━━━━ \n\n🎗ʝσιи🎗ѕнαяє🎗ѕυρρσят🎗"
     NO_CUSTOM_THUMB_NAIL_FOUND = "നീ എനിക്ക് Custom Thumbnail ഒന്നും തന്നില്ല. കഷ്ടം"
     SHOW_CUSTOM_THUMB_NAIL = "<b>😎👆Permanent Thumbnail👆😎</b> \n\n<b>©  @KL35RonaldoFan ©️ @KL35Cinemas ©️ @KL35Cinemaz</b>"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
