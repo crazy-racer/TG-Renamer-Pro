@@ -120,27 +120,6 @@ async def save_photo(bot, update):
             reply_to_message_id=update.message_id
         )
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["showthumb"]))
-async def show_thumbnail(bot, update):
-    if update.from_user.id in Config.BANNED_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
-    TRChatBase(update.from_user.id, update.photo, "showthumb")
-    download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + "/" + str(reply_message.media_group_id) + "/"
-    save_final_image = download_location + str(round(time.time())) + ".jpg"
-         # send
-         await bot.send_photo(
-             chat_id=update.chat.id,
-             photo=save_final_image,
-             caption=Translation.SHOW_CUSTOM_THUMB_NAIL,
-             reply_to_message_id=update.message_id
-         )
-
-
 @pyrogram.Client.on_message(pyrogram.Filters.command(["clearthumb"]))
 async def delete_thumbnail(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
