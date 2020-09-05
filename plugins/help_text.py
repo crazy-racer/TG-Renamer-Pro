@@ -68,7 +68,7 @@ async def help_user(bot, update):
                 ],
                 [
                     InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
-                    InlineKeyboardButton('❣️About❣️', callback_data="about")
+                    InlineKeyboardButton('❣️About❣️', callback_data="about"),
                     InlineKeyboardButton('🔐Close🔐', callback_data="close")
                 ]
             ]
