@@ -39,7 +39,7 @@ async def cb_handler(bot, update):
         await update.message.delete()
 
     if "help_back" in update.data:
-        await update.edit_message_text("help")
+        await update.message("help")
 
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["help"]))
