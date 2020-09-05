@@ -149,5 +149,13 @@ async def kl35thumb(bot, update):
     await bot.send_photo(
         chat_id=update.chat.id,
         photo=Translation.KL35_THUMBNAIL_PHOTO,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
+                    InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                ]
+            ]
+        ),
         reply_to_message_id=update.message_id
     )
