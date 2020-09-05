@@ -83,7 +83,7 @@ async def start(bot, update):
                     InlineKeyboardButton('💛My Channel💛', url="t.me/KL35Cinemaz")
                 ],
                 [
-                    InlineKeyboardButton('🆒Source Code🆒', url="https://bit.ly/2AVFsoD")
+                    InlineKeyboardButton('🆒Source Code🆒', url="https://bit.ly/2AVFsoD"),
                     InlineKeyboardButton('🔐Close🔐', callback_data="close")
                 ]
             ]
