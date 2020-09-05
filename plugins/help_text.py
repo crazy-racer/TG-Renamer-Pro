@@ -75,16 +75,16 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="📌Support📌", url="t.me/KL35Cinemas"),
-                    InlineKeyboardButton(text="😎Creator😎", url="t.me/KL35RonaldoFan")
+                    InlineKeyboardButton('📌Support📌', url="t.me/KL35Cinemas"),
+                    InlineKeyboardButton('😎Creator😎', url="t.me/KL35RonaldoFan")
                 ],
                 [
-                    InlineKeyboardButton(text="❤️My Group❤️", url="t.me/KL35Cinemas"),
-                    InlineKeyboardButton(text="💛My Channel💛", url="t.me/KL35Cinemaz")
+                    InlineKeyboardButton('❤️My Group❤️', url="t.me/KL35Cinemas"),
+                    InlineKeyboardButton('💛My Channel💛', url="t.me/KL35Cinemaz")
                 ],
                 [
-                    InlineKeyboardButton(text="🆒Source Code🆒", url="https://bit.ly/2AVFsoD")
-                    InlineKeyboardButton(text="🔐Close🔐", callback_data="close")
+                    InlineKeyboardButton('🆒Source Code🆒', url="https://bit.ly/2AVFsoD")
+                    InlineKeyboardButton('🔐Close🔐', callback_data="close")
                 ]
             ]
         ),
