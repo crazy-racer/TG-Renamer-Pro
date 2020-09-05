@@ -29,6 +29,17 @@ from helper_funcs.chat_base import TRChatBase
 import database.database as sql
 
 
+@pyrogram.Client.on_callback_query()
+async def cb_handler(bot, update):
+
+    if "close" in update.data:
+        await update.message.delete()
+
+    if "help_back" in update.data: 
+        await update.message.delete() 
+        await help_user(bot, update.message)
+
+
 @pyrogram.Client.on_message(pyrogram.Filters.command(["generatecustomthumbnail"]))
 async def generate_custom_thumbnail(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
