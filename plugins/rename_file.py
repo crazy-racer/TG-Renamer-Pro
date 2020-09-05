@@ -34,6 +34,17 @@ from PIL import Image
 from database.database import *
 
 
+@pyrogram.Client.on_callback_query()
+async def cb_handler(bot, update):
+
+    if "close" in update.data:
+        await update.message.delete()
+
+    if "help_back" in update.data: 
+        await update.message.delete() 
+        await help_user(bot, update.message)
+
+
 @pyrogram.Client.on_message(pyrogram.Filters.command(["rename"]))
 async def rename_doc(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
@@ -87,7 +98,16 @@ async def rename_doc(bot, update):
                 await bot.edit_message_text(
                     text=Translation.RENAME_403_ERR,
                     chat_id=update.chat.id,
-                    message_id=a.message_id
+                    message_id=a.message_id,
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
+                                InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                            ]
+                        ]
+                   ),
+                   reply_to_message_id=update.message_id
                 )
                 return
             new_file_name = download_location + file_name
@@ -96,7 +116,7 @@ async def rename_doc(bot, update):
                 text=Translation.UPLOAD_START,
                 chat_id=update.chat.id,
                 message_id=a.message_id
-                )
+            )
             logger.info(the_real_download_location)
             thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
             if not os.path.exists(thumb_image_path):
@@ -155,5 +175,13 @@ async def rename_doc(bot, update):
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.REPLY_TO_DOC_FOR_RENAME_FILE,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
+                        InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                    ]
+                ]
+            ),
             reply_to_message_id=update.message_id
-        )
+        )               
