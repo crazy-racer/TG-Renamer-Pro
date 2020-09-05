@@ -35,12 +35,20 @@ from helper_funcs.chat_base import TRChatBase
 @pyrogram.Client.on_callback_query()
 async def cb_handler(bot, update):
 
+    if "start" in update.data: 
+        await update.message.delete() 
+        await start(bot, update.message)
+
     if "close" in update.data:
         await update.message.delete()
 
     if "help_back" in update.data: 
         await update.message.delete() 
         await help_user(bot, update.message)
+
+    if "about" in update.data: 
+        await update.message.delete() 
+        await about_me(bot, update.message)
 
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["help"]))
@@ -52,6 +60,19 @@ async def help_user(bot, update):
         text=Translation.HELP_USER,
         parse_mode="html",
         disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('❤️My Group❤️', url="t.me/KL35Cinemas"),
+                    InlineKeyboardButton('💛My Channel💛', url="t.me/KL35Cinemaz")
+                ],
+                [
+                    InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
+                    InlineKeyboardButton('❣️About❣️', callback_data="about")
+                    InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                ]
+            ]
+        ),
         reply_to_message_id=update.message_id
     )
 
@@ -61,11 +82,17 @@ async def about_me(bot, update):
     TRChatBase(update.from_user.id, update.text, "/about")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.ABOUT_ME.format(
-            bot.username
-        ),
+        text=Translation.ABOUT_ME.format
         parse_mode="html",
         disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('🔙Back🔙', callback_data="help_back"),
+                    InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                ]
+            ]
+        ),
         reply_to_message_id=update.message_id
     )
 
