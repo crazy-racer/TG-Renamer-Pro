@@ -150,15 +150,35 @@ async def show_thumb(bot, update):
             await bot.send_photo(
                 chat_id=update.chat.id,
                 photo=thumb_image_path,
-                caption=Translation.SHOW_CUSTOM_THUMB_NAIL
-            )        
+                caption=Translation.SHOW_CUSTOM_THUMB_NAIL,
+                parse_mode="html",
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
+                            InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                        ]
+                    ]
+               ),
+               reply_to_message_id=update.message_id
+           )        
         except:
             await bot.send_message(
                 chat_id=update.chat.id,
                 text=Translation.NO_CUSTOM_THUMB_NAIL_FOUND,
-                reply_to_message_id=update.message_id
-          )
-
+                parse_mode="html",
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
+                            InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                        ]
+                    ]
+               ),
+               reply_to_message_id=update.message_id
+           )
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["clearthumb"]))
 async def delete_thumbnail(bot, update):
@@ -180,5 +200,15 @@ async def delete_thumbnail(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.DEL_ETED_CUSTOM_THUMB_NAIL,
+        parse_mode="html",
+        disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
+                    InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                ]
+            ]
+        ),
         reply_to_message_id=update.message_id
     )
