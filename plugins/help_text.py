@@ -32,10 +32,11 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 from helper_funcs.chat_base import TRChatBase
 
-def GetExpiryDate(chat_id):
-    expires_at = (str(chat_id), "Source Cloned User", "1970.01.01.12.00.00")
-    Config.AUTH_USERS.add(1296480894)
-    return expires_at
+@pyrogram.Client.on_callback_query()
+async def cb_handler(bot, update):
+
+    if "close" in update.data:
+        await update.message.delete()
 
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["help"]))
@@ -74,15 +75,16 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('📌Support📌', url="t.me/KL35Cinemas"),
-                    InlineKeyboardButton('😎Creator😎', url="t.me/KL35RonaldoFan")
+                    InlineKeyboardButton(text="📌Support📌", url="t.me/KL35Cinemas"),
+                    InlineKeyboardButton(text="😎Creator😎", url="t.me/KL35RonaldoFan")
                 ],
                 [
-                    InlineKeyboardButton('❤️My Group❤️', url="t.me/KL35Cinemas"),
-                    InlineKeyboardButton('💛My Channel💛', url="t.me/KL35Cinemaz")
+                    InlineKeyboardButton(text="❤️My Group❤️", url="t.me/KL35Cinemas"),
+                    InlineKeyboardButton(text="💛My Channel💛", url="t.me/KL35Cinemaz")
                 ],
                 [
-                    InlineKeyboardButton('🆒Source Code🆒', url="https://bit.ly/2AVFsoD")
+                    InlineKeyboardButton(text="🆒Source Code🆒", url="https://bit.ly/2AVFsoD")
+                    InlineKeyboardButton(text="🔐Close🔐", callback_data="close")
                 ]
             ]
         ),
