@@ -22,6 +22,8 @@ else:
 # the Strings used for this "thing"
 from translation import Translation
 
+from help_text import help_user
+
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
