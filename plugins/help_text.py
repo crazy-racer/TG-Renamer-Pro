@@ -82,7 +82,7 @@ async def about_me(bot, update):
     TRChatBase(update.from_user.id, update.text, "/about")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.ABOUT_ME
+        text=Translation.ABOUT_ME,
         parse_mode="html",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
