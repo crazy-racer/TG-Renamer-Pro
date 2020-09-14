@@ -10,9 +10,9 @@ An Open Source Telegram Rename Bot
 
 
 ### You can tap the Deploy To Heroku button below to deploy straight to Heroku!
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KL-35RonaldoFan/TG-Renamer-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-For Queries and support, contact [KL-35 RonaldoFan](https://telegram.dog/KL35RonaldoFan)
+For Queries and support, contact [KL_noob](https://telegram.dog/KL_noob)
 
 ## Credits, and Thanks to Beloved Developers ;
 
