@@ -20,12 +20,12 @@ class Translation(object):
     DEL_ETED_CUSTOM_THUMB_NAIL = "ഞാൻ Custom Thumbnail Delete ചെയ്തു ❎️. ഇനി Thumbnail താരത്തെ അയക്കുന്ന ഫയലുകൾക്ക് Thumbnail കാണില്ല. \n\n<b>©  @KL_noob</b>"
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "Media ഞാൻ മൊത്തത്തിൽ അങ്ങ് കളഞ്ഞു."
     SAVED_RECVD_DOC_FILE = "ഞാൻ File Download ചെയ്തു കഴിഞ്ഞു🤓"
-    CUSTOM_CAPTION_UL_FILE = "<i><b>{}</b></i> \n<i><b> ✧━</b></i> \n<i><b>File_renamer_pro_bot</b></i> \n<i><b>━✧ </b></i> \n\n<i><b>ѕυρρσят🎗</b></i>"
+    CUSTOM_CAPTION_UL_FILE = "<i><b>{}</b></i> \n<i><b> ✧━</b></i> \n<i><b>…</b></i> \n<i><b>━✧ </b></i> \n\n<i><b>ѕυρρσят🎗</b></i>"
     NO_CUSTOM_THUMB_NAIL_FOUND = "നീ എനിക്ക് Custom Thumbnail ഒന്നും തന്നില്ല. കഷ്ടം"
     SHOW_CUSTOM_THUMB_NAIL = "<b>🔰Permanent Thumbnail🔰</b> \n\n<b>©️ @KL_noob</b>"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     KL35_THUMBNAIL_PHOTO = "https://telegra.ph/file/1ee9fd2c4b6a6b3c39262.jpg"
-    ABOUT_ME = """<b>⭕️ group:__</b> \n\n<b>➕ Name: @File_renamer_pro_bot</b> \n\n<b>➕ Creator: @KL_noob</b> \n\n<b>⭕️ Language: Python3</b> \n\n<b>⭕️ Library : <a href="https://docs.pyrogram.org/">Pyrogram asyncio 0.16.1</a></b> \n\n<b>⭕️ Source Code : 👉 <a href="https://bit.ly/2AVFsoD">Click Here</a></b> \n\n<b>©  @KL_noob</b>"""
+    ABOUT_ME = """<b>⭕️ group:__</b> \n\n<b>➕ Name: @DeathCaptureBoy</b> \n\n<b>➕ Creator: @KL_noob</b> \n\n<b>⭕️ Language: Python3</b> \n\n<b>⭕️ Library : <a href="https://docs.pyrogram.org/">Pyrogram asyncio 0.16.1</a></b> \n\n<b>⭕️ Source Code : 👉 <a href="https://bit.ly/2AVFsoD">Click Here</a></b> \n\n<b>©  @KL_noob</b>"""
     HELP_USER = """ഇത് അത്രക്ക് പാടൊന്നുമല്ലടെ.
     
 1. ഒരു Telegram File Send ചെയ്യുക.
