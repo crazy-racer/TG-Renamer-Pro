@@ -158,8 +158,8 @@ async def show_thumb(bot, update):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
-                            InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                            InlineKeyboardButton('❔Help', callback_data="help_back"),
+                            InlineKeyboardButton('🔐Close', callback_data="close")
                         ]
                     ]
                ),
@@ -174,8 +174,8 @@ async def show_thumb(bot, update):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
-                            InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                            InlineKeyboardButton('❔Help', callback_data="help_back"),
+                            InlineKeyboardButton('🔐Close', callback_data="close")
                         ]
                     ]
                ),
@@ -207,8 +207,8 @@ async def delete_thumbnail(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('❓️Help❓️', callback_data="help_back"),
-                    InlineKeyboardButton('🔐Close🔐', callback_data="close")
+                    InlineKeyboardButton('❔Help', callback_data="help_back"),
+                    InlineKeyboardButton('🔐Close', callback_data="close")
                 ]
             ]
         ),
