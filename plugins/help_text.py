@@ -63,7 +63,7 @@ async def help_user(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('🔰 creater', url="t.me/KL35Cinemas")
+                    InlineKeyboardButton('🔰 creater', url="t.me/DeathCaptureBoy")
                     
                 ],
                 [
@@ -109,7 +109,7 @@ async def start(bot, update):
                     InlineKeyboardButton('🛡️Share', url="tg://msg?text=Hai%20Friend%20%E2%9D%A4%EF%B8%8F%2C%0AToday%20i%20just%20found%20out%20an%20intresting%20and%20Powerful%20%2A%2ARename%20Bot%2A%2A%20for%20Free%F0%9F%A5%B0.%20%0A%2A%2ABot%20Link%20%3A%2A%2A%20%40KL35RenamerBot%20%F0%9F%94%A5")
                 ],
                 [
-                    InlineKeyboardButton('🔰 Creater', url="t.me/USER_IS_HACKER")   
+                    InlineKeyboardButton('🔰 Creater', url="t.me/DeathCaptureBoy")   
                 ],
                 [
                     InlineKeyboardButton('❔Help', callback_data="help_back"),
